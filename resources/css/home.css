@@ -1,0 +1,46 @@
+div.content {
+    padding: 0 16px;
+}
+
+div.card-container {
+    margin: 0 10%; 
+}
+
+div.card {
+    border: none;
+    box-shadow: 0 0 0px rgba(0,0,0,.14), 0 4px 10px rgba(0,0,0,.28);
+    height: 400px;
+    width: 40%;
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+div.card-header img {
+    width: 100%;
+}
+
+div.card-title a {
+    font-size: 15px;
+}
+
+div.card-footer {
+    background-color: #eaeaea;
+    padding: 16px 8px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.download-container {
+    float: right;
+    position: relative;
+    top: -3px;
+}
+
+div.download-container div.download-count {
+    font-size: 16px;
+    margin-left: 10px;
+    display: inline-block;
+}
