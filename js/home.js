@@ -24,7 +24,7 @@ var home_module = function() {
 
     function fetchAngularTreeGridCount() {
         var currentDate = Utility.getCurrentDate(),
-            url = "https://npm-stat.com/downloads/range/2019-02-11:" + currentDate + "/angular-tree-grid";
+            url = "https://npm-stat.com/downloads/range/2019-04-22:" + currentDate + "/angular-tree-grid";
 
         Utility.ajax(url, function (response) {
             var total = 0,

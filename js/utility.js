@@ -13,7 +13,7 @@ var Utility = function() {
     function getCurrentDate() {
         var date = new Date();
 
-        return date.getFullYear() + '-' + date.getDate() + '-' + (date.getMonth() + 1);
+        return date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
     }
 
     return {
