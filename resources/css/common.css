@@ -29,3 +29,13 @@ body {
 div.content {
     padding: 2rem 1.5rem;
 }
+
+@media only screen and (max-width: 800px) {
+    div.navigator {
+        right: 0;
+    }
+
+    div.content {
+        padding: 1rem 1rem;
+    }
+}
