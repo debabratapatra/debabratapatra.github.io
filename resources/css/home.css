@@ -5,10 +5,10 @@ div.card-container {
 div.card {
     border: none;
     box-shadow: 0 0 0px rgba(0,0,0,.14), 0 4px 10px rgba(0,0,0,.28);
-    height: 27rem;
+    height: 26rem;
     width: 28rem;
     position: relative;
-    display: inline-block;
+    display: inline-table;
     margin-left: 20px;
 }
 
@@ -36,8 +36,13 @@ div.card-title a:hover {
     text-decoration: underline;
 }
 
+div.card-details{
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
 div.card-footer {
-    background-color: #f1f1f1bd;
+    background-color: rgba(227, 227, 227, 0.31);
     padding: 16px 8px;
     position: absolute;
     bottom: 0px;
