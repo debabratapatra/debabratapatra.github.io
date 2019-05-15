@@ -29,7 +29,7 @@ div.card-body {
 div.card-title a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: #1919fc;
+    color: rgb(4, 107, 137);
 }
 
 div.card-title a:hover {
@@ -37,7 +37,7 @@ div.card-title a:hover {
 }
 
 div.card-footer {
-    background-color: #eaeaea;
+    background-color: #f1f1f1bd;
     padding: 16px 8px;
     position: absolute;
     bottom: 0px;
@@ -47,9 +47,8 @@ div.card-footer {
 }
 
 div.card-footer a {
-    font-size: 20px;
-    font-size: 20px;
-    color: #0303fe;
+    font-size: 1.3rem;
+    color: rgb(4, 107, 137);
     text-decoration: none;
 }
 
