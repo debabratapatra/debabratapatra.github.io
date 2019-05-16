@@ -4,7 +4,6 @@ document.body.onload = function() {
     home_module.fetchAngularTreeGridCount();
 }
 
-
 var home_module = function() {
 
     function fetchNgTreeGridCount() {
