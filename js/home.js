@@ -111,130 +111,135 @@ var home_module = function() {
             ctx.fill();
             ctx.restore();
         };
-        // window.addEventListener("load",function(event) {
-            var canvas = document.getElementById('space-canvas'),
-                context = canvas.getContext('2d'),
-                stars = [],
-                numStars = 100,
-                fl = 250,
-                vpX = canvas.width / 2,
-                vpY = canvas.height / 2,
-                ax = 0,
-                ay = 0,
-                az = 0,
-                vx = 0,
-                vy = 0,
-                vz = 0,
-                friction = 0.98;
-        
-            for (var star, i = 0; i < numStars; i++) {
-                star = new Star();
-                star.xpos = Math.random() * 9000 - 5000;
-                star.ypos = Math.random() * 5000 - 2000;
-                star.zpos = Math.random() * 10000000;
-                stars.push(star);
+
+        var canvas = document.getElementById('space-canvas');
+        canvas.width = canvas.parentElement.offsetWidth;
+        canvas.height = canvas.parentElement.offsetHeight;
+
+        var context = canvas.getContext('2d'),
+            stars = [],
+            numStars = 100,
+            fl = 250,
+            vpX = canvas.width / 2,
+            vpY = canvas.height / 2,
+            ax = 0,
+            ay = 0,
+            az = 0,
+            vx = 0,
+            vy = 0,
+            vz = 0,
+            friction = 0.98;
+    
+        for (var star, i = 0; i < numStars; i++) {
+            star = new Star();
+            star.xpos = Math.random() * 9000 - 5000;
+            star.ypos = Math.random() * 5000 - 2000;
+            star.zpos = Math.random() * 10000000;
+            stars.push(star);
+        }
+    
+        window.addEventListener('keydown', function (event) {
+            switch (event.keyCode) {
+            case 38:        //up
+            az = -1;
+            event.preventDefault();
+            break;
+            case 40:        //down
+            az = 1;
+            event.preventDefault();
+            break;
+            case 37:        //left
+            ax = 1;
+            break;
+            case 39:        //right
+            ax = -1;
+            break;
             }
-        
-            window.addEventListener('keydown', function (event) {
-                switch (event.keyCode) {
-                case 38:        //up
-                az = -1;
-                event.preventDefault();
-                break;
-                case 40:        //down
-                az = 1;
-                event.preventDefault();
-                break;
-                case 37:        //left
-                ax = 1;
-                break;
-                case 39:        //right
-                ax = -1;
-                break;
-                }
-                
-            }, false);
-        
-            window.addEventListener('keyup', function (event) {
-                switch (event.keyCode) {
-                case 38:        //up
-                case 40:        //down
-                az = 0;
-                break;
-                case 37:        //left
-                case 39:        //right
-                ax = 0;
-                break;
-                }
-            }, false);
-        
-            function move (star) {
-                star.xpos += vx;
-                star.ypos += vy;
-                star.zpos += vz;
-                if (star.xpos > 5000) {
-                star.xpos += -9000;
-                }
-                if(star.xpos < -5000) {
-                    star.xpos += 9000;
-                }
-                if (star.zpos < -fl) {
-                star.zpos += 10000;
-                }
-                if (star.zpos > 10000 - fl) {
-                star.zpos -= 10000;
-                }
-                var scale = fl / (fl + star.zpos);
-                star.scaleX = star.scaleY = scale;
-                star.x = vpX + star.xpos * scale;
-                star.y = vpY + star.ypos * scale;
-                star.alpha = scale;
+            
+        }, false);
+    
+        window.addEventListener('keyup', function (event) {
+            switch (event.keyCode) {
+            case 38:        //up
+            case 40:        //down
+            az = 0;
+            break;
+            case 37:        //left
+            case 39:        //right
+            ax = 0;
+            break;
             }
-        
-            function zSort (a, b) {
-                return (b.zpos - a.zpos);
+        }, false);
+    
+        function move (star) {
+            star.xpos += vx;
+            star.ypos += vy;
+            star.zpos += vz;
+            if (star.xpos > 5000) {
+            star.xpos += -9000;
             }
-        
-            function draw (star) {
-                star.draw(context);
+            if(star.xpos < -5000) {
+                star.xpos += 9000;
             }
-        
-            (function drawFrame () {
-                window.requestAnimationFrame(drawFrame, canvas);
-                context.clearRect(0, 0, canvas.width, canvas.height);
-        
-                vx += ax;
-                vy += ay;
-                vz += az;
-                stars.forEach(move);
-                vx *= friction;
-                vy *= friction;
-                vz *= friction;
-                stars.sort(zSort);
-                stars.forEach(draw);
-        
-            }());
-        // });
+            if (star.zpos < -fl) {
+            star.zpos += 10000;
+            }
+            if (star.zpos > 10000 - fl) {
+            star.zpos -= 10000;
+            }
+            var scale = fl / (fl + star.zpos);
+            star.scaleX = star.scaleY = scale;
+            star.x = vpX + star.xpos * scale;
+            star.y = vpY + star.ypos * scale;
+            star.alpha = scale;
+        }
+    
+        function zSort (a, b) {
+            return (b.zpos - a.zpos);
+        }
+    
+        function draw (star) {
+            star.draw(context);
+        }
+    
+        (function drawFrame () {
+            window.requestAnimationFrame(drawFrame, canvas);
+            context.clearRect(0, 0, canvas.width, canvas.height);
+    
+            vx += ax;
+            vy += ay;
+            vz += az;
+            stars.forEach(move);
+            vx *= friction;
+            vy *= friction;
+            vz *= friction;
+            stars.sort(zSort);
+            stars.forEach(draw);
+    
+        }());
     }
 
     function launnchBilliard() {
-        var canvas = document.getElementById("billiard-canvas"),
-        ctx = canvas.getContext("2d"),
-        components = {},
-        board = new Board(canvas),
-        striker = new Striker(board, components),
-        mouse = {
-            x: canvas.width / 2, //Initial position
-            y: canvas.height / 2
-        },
-        balls = [],
-        cueBall,
-        cueStick,
-        predictionLine,
-        ballRadius = 12;
+        var canvas = document.getElementById("billiard-canvas");
+        canvas.width = canvas.parentElement.offsetWidth;
+        canvas.height = canvas.parentElement.offsetHeight;
+        var ctx = canvas.getContext("2d"),
+            components = {},
+            board = new Board(canvas),
+            striker = new Striker(board, components),
+            mouse = {
+                x: canvas.width / 2, //Initial position
+                y: canvas.height / 2
+            },
+            balls = [],
+            cueBall,
+            cueStick,
+            predictionLine,
+            ballRadius = 12;
 
-        components.board = board;
-        components.striker = striker;
+            components.board = board;
+            components.striker = striker;
+
         var maxBallsWidth = 4 * 2 * ballRadius,
             x = board.x + board.width / 2 - maxBallsWidth / 2 + ballRadius,
             y = board.height / 4,
@@ -295,8 +300,8 @@ var home_module = function() {
             for (var ballA, i = 0, len = balls.length - 1; i < len; i++) {
                 ballA = balls[i];
                 for (var ballB, j = i + 1; j < balls.length; j++) {
-                ballB = balls[j];
-                checkCollision(ballA, ballB);
+                    ballB = balls[j];
+                    checkCollision(ballA, ballB);
                 }
             }
         })();
@@ -315,9 +320,9 @@ var home_module = function() {
                 ctx.fill();
             }
 
-            this.x = 40;
+            this.x = 0;
             this.y = this.x;
-            this.width = canvas.width - 2 * this.x;
+            this.width = canvas.width;
             this.height = .7 * this.width;
             this.holeRadius = 30;
 
@@ -344,7 +349,7 @@ var home_module = function() {
         }
 
         function Striker(board, components) {
-            var wrapperX = board.x + 20,
+            var wrapperX = board.x,
                 wrapperY = board.y + board.height + 20,
                 wrapperWidth = 200,
                 wrapperHeight = 50,
@@ -796,9 +801,6 @@ var home_module = function() {
                 }
             });
         }
-
-
-
         
     }
 
