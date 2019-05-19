@@ -1,9 +1,41 @@
 div.content {
-    padding: 2rem  16rem;
+    padding: 2rem 16rem;
+}
+
+i {
+    color: rgb(4, 107, 137);
+}
+
+div.name {
+    font-size: 1.4rem;
+}
+
+div.designation {
+    color: rgb(4, 107, 137);
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+span.role {
+    color: rgb(4, 107, 137);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+div.location {
+    margin-top: 0.5rem;    
+}
+
+div.short-details {
+    margin-top: 0.7rem;
+}
+
+div.short-details span {
+    margin-right: 0.6rem;
 }
 
 div.details {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 div.experience {
@@ -18,6 +50,6 @@ div.skills {
 
 @media only screen and (max-width: 800px) {
     div.content {
-        padding: 2rem  2rem;
+        padding: 2rem 2rem;
     }
 }

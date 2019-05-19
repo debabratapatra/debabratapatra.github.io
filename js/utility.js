@@ -17,7 +17,7 @@ var Utility = function() {
     }
 
     function formatNumber(value) {
-        return value.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        return value.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
     }
 
     return {
