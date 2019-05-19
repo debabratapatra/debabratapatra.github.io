@@ -16,8 +16,13 @@ var Utility = function() {
         return date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
     }
 
+    function formatNumber(value) {
+        return value.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    }
+
     return {
         ajax: ajax,
-        getCurrentDate: getCurrentDate
+        getCurrentDate: getCurrentDate,
+        formatNumber: formatNumber
     }
 }();

@@ -63,4 +63,8 @@ div.content {
     div.content {
         padding: 1rem 1rem;
     }
+
+    .hide-sm {
+        display: none;
+    }
 }

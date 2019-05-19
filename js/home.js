@@ -32,12 +32,6 @@ CanvasRenderingContext2D.prototype.dottedLine = function(x1, y1, x2, y2, dotLen)
     this.closePath();
 };
 
-// document.body.onload = function() {
-//     home_module.fetchNgTreeGridCount();
-//     home_module.fetchAngularTreeGridCount();
-//     home_module.launchSpaceExploration();
-// }
-
 window.addEventListener("load",function(event) {
     home_module.fetchNgTreeGridCount();
     home_module.fetchAngularTreeGridCount();
@@ -58,7 +52,7 @@ var home_module = function() {
                 total += obj.downloads;
             });
 
-            document.getElementById('ngtreegrid_download_count').innerHTML = total;
+            document.getElementById('ngtreegrid_download_count').innerHTML = utlity.formatNumber(total);
         });
     }
 
@@ -73,7 +67,7 @@ var home_module = function() {
                 total += obj.downloads;
             });
 
-            document.getElementById('angulartreegrid_download_count').innerHTML = total;
+            document.getElementById('angulartreegrid_download_count').innerHTML = utlity.formatNumber(total);
         });
     }
 
