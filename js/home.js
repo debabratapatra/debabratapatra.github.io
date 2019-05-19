@@ -52,7 +52,7 @@ var home_module = function() {
                 total += obj.downloads;
             });
 
-            document.getElementById('ngtreegrid_download_count').innerHTML = utlity.formatNumber(total);
+            document.getElementById('ngtreegrid_download_count').innerHTML = Utility.formatNumber(total);
         });
     }
 
@@ -67,7 +67,7 @@ var home_module = function() {
                 total += obj.downloads;
             });
 
-            document.getElementById('angulartreegrid_download_count').innerHTML = utlity.formatNumber(total);
+            document.getElementById('angulartreegrid_download_count').innerHTML = Utility.formatNumber(total);
         });
     }
 
