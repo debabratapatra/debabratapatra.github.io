@@ -43,6 +43,10 @@ div.content {
     width: 120px;
     height: 120px;
 }
+
+.hide {
+    display: none;
+}
   
 /* Safari */
 @-webkit-keyframes spin {

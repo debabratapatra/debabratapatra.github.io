@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="resources/images/app/favicon.ico" type="image/x-icon">
     <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="resources/css/common.css">
     <link rel="stylesheet" href="resources/css/home.css">
@@ -21,10 +21,39 @@
         </div>
     </div>
     <div class="content">
+        <div id="slider-wrapper">
+            <div class="slider-left-btn" onclick="slider_module.showPreviousImage()">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="slider-right-btn" onclick="slider_module.showNextImage()">
+                <i class="fas fa-chevron-right"></i>
+            </div>            
+            <div class="slider-container">
+                <div class="slide">
+                    <img src="resources/images/sliders/angular-tree-grid.png" alt="NGTreeGrid Slider">
+                </div>
+                <div class="slide">
+                    <img src="resources/images/sliders/ngtreegrid.png" alt="Angular Tree Grid Slider">
+                </div>
+                <div class="slide">
+                    <img src="resources/images/sliders/billiard.png" alt="Billiard Slider">
+                </div>
+                <div class="slide">
+                    <img src="resources/images/sliders/space.png" alt="Space Slider">
+                </div>
+            </div>
+            <div class="carousel-container">
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+            </div>
+        </div>
+        
         <div class="card-container">
             <div class="card">
                 <div class="card-header">
-                    <img src="resources/images/ngtreegrid.png" alt="ngtreegrid">
+                    <img src="resources/images/cards/ngtreegrid.png" alt="ngtreegrid">
                 </div>
                 <div class="card-body">
                     <div class="card-title">
@@ -47,7 +76,7 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <img src="resources/images/angular-tree-grid.png" alt="ngtreegrid">
+                    <img src="resources/images/cards/angular-tree-grid.png" alt="ngtreegrid">
                 </div>
                 <div class="card-body">
                     <div class="card-title">

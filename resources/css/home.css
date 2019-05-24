@@ -1,3 +1,43 @@
+div.slider-wrapper {
+    position: relative;
+}
+div.slider-container {
+    
+}
+
+div.slide {
+
+}
+
+div.slide img {
+    width: 100%;
+    height: auto;
+}
+
+div.carousel-container i {
+    font-size: 13px;
+}
+
+div.slider-left-btn {
+    position: absolute;
+    font-size: 6rem;
+    top: 45%;
+    left: 0;
+    cursor: pointer;
+}
+
+div.slider-right-btn {
+    position: absolute;
+    font-size: 5rem;
+    right: 0;
+    top: 45%;
+    cursor: pointer;
+}
+
+div.carousel-container {
+    text-align: center;
+}
+
 div.card-container {
     text-align: center;
 }
