@@ -67,8 +67,9 @@ div.slider-right-btn:hover {
     opacity: 1;
 }
 
-div.carousel-container {    
+div.carousel-container {
     text-align: center;
+    margin-top: 2rem;
 }
 
 i.carousel {
@@ -77,6 +78,7 @@ i.carousel {
 
 div.card-container {
     text-align: center;
+    margin-top: 3rem;
 }
 
 div.card {
