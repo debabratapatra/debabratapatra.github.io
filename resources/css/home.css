@@ -1,12 +1,35 @@
-div.slider-wrapper {
+div#slider-wrapper {
     position: relative;
 }
 div.slider-container {
     
+position: relative;
 }
 
 div.slide {
+    background-color: #0284A9;
+}
 
+div.slide-title {
+    color: white;
+    position: absolute;
+    top: 20%;
+    font-size: 3rem;
+    padding-left: 7rem;
+}
+
+div.slide-details {
+    top: 42%;
+    left: 11rem;
+    position: absolute;
+}
+
+div.slide-details a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid;
+    padding: 0.5rem 0.5rem;
 }
 
 div.slide img {
@@ -18,24 +41,38 @@ div.carousel-container i {
     font-size: 13px;
 }
 
-div.slider-left-btn {
+div.slider-nav-btn {
     position: absolute;
     font-size: 6rem;
-    top: 45%;
-    left: 0;
     cursor: pointer;
+    opacity: 0.2;
+    z-index: 100;
+}
+
+div.slider-left-btn {
+    top: 38%;
+    left: 0;
+}
+
+div.slider-left-btn:hover {
+    opacity: 1;
 }
 
 div.slider-right-btn {
-    position: absolute;
-    font-size: 5rem;
     right: 0;
-    top: 45%;
-    cursor: pointer;
+    top: 38%;
 }
 
-div.carousel-container {
-    text-align: center;
+div.slider-right-btn:hover {
+    opacity: 1;
+}
+
+div.carousel-container {    
+    text-align: center;
+}
+
+i.carousel {
+    cursor: pointer;
 }
 
 div.card-container {

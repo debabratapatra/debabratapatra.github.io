@@ -811,46 +811,70 @@ var slider_module = function() {
     var $slider_wrapper = document.getElementById('slider-wrapper'),
         $slider_container = $slider_wrapper.querySelector('div.slider-container'),
         $sliders = $slider_container.querySelectorAll('div.slide'),
+        $carousels = document.querySelectorAll('i.carousel'),
         current_image_index = 0,
         slider_count = $sliders.length;
 
-    function hideAllImage() {
+    function makeAllCarouselsRegular() {
+        for (var index = 0; index < $carousels.length; index++) {
+            var $carousel = $carousels[index];
+            $carousel.classList.add('far');
+            $carousel.classList.remove('fas');
+        }
+    }
+
+    function hideAllSlides() {
         for (var index = 0; index < $sliders.length; index++) {
             var $slider = $sliders[index];
             $slider.classList.add('hide');
         }
     }
 
-    function showFirstImage() {
-        hideAllImage();
+    function showFirstSlide() {
+        hideAllSlides();
         $sliders[0].classList.remove('hide');
+        makeAllCarouselsRegular();
+        $carousels[0].classList.add('fas');
     }
 
-    function showNextImage() {
-        hideAllImage();
+    function showNextSlide() {
+        hideAllSlides();
         current_image_index = current_image_index + 1;
         if(current_image_index > slider_count - 1) {
             current_image_index = slider_count -1 ;
         }
         $sliders[current_image_index].classList.remove('hide');
+        makeAllCarouselsRegular();
+        $carousels[current_image_index].classList.add('fas');
     }
 
-    function showPreviousImage() {
-        hideAllImage();
+    function showPreviousSlide() {
+        hideAllSlides();
         current_image_index = current_image_index - 1;
         if(current_image_index < 0) {
             current_image_index = 0;
         }
         $sliders[current_image_index].classList.remove('hide');
+        makeAllCarouselsRegular();
+        $carousels[current_image_index].classList.add('fas');
+    }
+
+    function showSlide(index) {
+        hideAllSlides();
+        current_image_index = index;
+        $sliders[current_image_index].classList.remove('hide');
+        makeAllCarouselsRegular();
+        $carousels[current_image_index].classList.add('fas');
     }
 
     function init() {
-        showFirstImage();
+        showFirstSlide();
     }
 
     return {
         init: init,
-        showNextImage: showNextImage,
-        showPreviousImage: showPreviousImage
+        showPreviousSlide: showPreviousSlide,
+        showNextSlide: showNextSlide,
+        showSlide: showSlide
     }
 }();

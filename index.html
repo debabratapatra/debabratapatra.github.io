@@ -22,31 +22,55 @@
     </div>
     <div class="content">
         <div id="slider-wrapper">
-            <div class="slider-left-btn" onclick="slider_module.showPreviousImage()">
+            <div class="slider-left-btn slider-nav-btn" onclick="slider_module.showPreviousSlide()">
                 <i class="fas fa-chevron-left"></i>
             </div>
-            <div class="slider-right-btn" onclick="slider_module.showNextImage()">
+            <div class="slider-right-btn slider-nav-btn" onclick="slider_module.showNextSlide()">
                 <i class="fas fa-chevron-right"></i>
             </div>            
             <div class="slider-container">
                 <div class="slide">
-                    <img src="resources/images/sliders/angular-tree-grid.png" alt="NGTreeGrid Slider">
+                    <div class="slide-title">
+                        NGTreeGrid
+                    </div>
+                    <div class="slide-details">
+                        <a href="pages/ngtreegrid/demo">View Details</a>
+                    </div>
+                    <img src="resources/images/sliders/ngtreegrid.png" alt="NGTreeGrid Slider">
                 </div>
                 <div class="slide">
-                    <img src="resources/images/sliders/ngtreegrid.png" alt="Angular Tree Grid Slider">
+                    <div class="slide-title">
+                            Angular Tree Grid
+                    </div>
+                    <div class="slide-details">
+                        <a href="pages/angular-tree-grid/">View Details</a>
+                    </div>
+                    <img src="resources/images/sliders/angular-tree-grid.png" alt="Angular Tree Grid Slider">
                 </div>
                 <div class="slide">
+                    <div class="slide-title">
+                        Billiard Game
+                    </div>
+                    <div class="slide-details">
+                        <a href="https://kanhudev.blogspot.com/2014/10/billiard-game-in-canvas.html">View Details</a>
+                    </div>
                     <img src="resources/images/sliders/billiard.png" alt="Billiard Slider">
                 </div>
                 <div class="slide">
+                    <div class="slide-title">
+                        Space Exploration
+                    </div>
+                    <div class="slide-details">
+                        <a href="https://kanhudev.blogspot.com/2015/01/space-exploration.html">View Details</a>
+                    </div>
                     <img src="resources/images/sliders/space.png" alt="Space Slider">
                 </div>
             </div>
             <div class="carousel-container">
-                <i class="far fa-circle"></i>
-                <i class="far fa-circle"></i>
-                <i class="far fa-circle"></i>
-                <i class="far fa-circle"></i>
+                <i class="far fa-circle carousel" onclick="slider_module.showSlide(0)"></i>
+                <i class="far fa-circle carousel" onclick="slider_module.showSlide(1)"></i>
+                <i class="far fa-circle carousel" onclick="slider_module.showSlide(2)"></i>
+                <i class="far fa-circle carousel" onclick="slider_module.showSlide(3)"></i>
             </div>
         </div>
         
