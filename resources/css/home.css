@@ -46,10 +46,10 @@ div.slider-nav-btn {
     cursor: pointer;
     opacity: 0.2;
     z-index: 100;
+    top: calc(50% - 5rem);
 }
 
 div.slider-left-btn {
-    top: 38%;
     left: 0;
 }
 
@@ -59,7 +59,6 @@ div.slider-left-btn:hover {
 
 div.slider-right-btn {
     right: 0;
-    top: 38%;
 }
 
 div.slider-right-btn:hover {
