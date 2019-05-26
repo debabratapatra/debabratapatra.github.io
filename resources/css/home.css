@@ -35,6 +35,10 @@ div.slide-details a {
     display: inline-block;
 }
 
+div.slide-details a:hover {
+    color: #026f8f;
+}
+
 div.slide-details a i {
     margin-right: 0.25rem;
     font-size: 0.9rem;
@@ -115,7 +119,7 @@ div.card-body {
 div.card-title a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: rgb(4, 107, 137);
+    color: #024559;
 }
 
 div.card-title a:hover {
@@ -139,7 +143,7 @@ div.card-footer {
 
 div.card-footer a {
     font-size: 1.3rem;
-    color: rgb(4, 107, 137);
+    color: #024559;
     text-decoration: none;
 }
 

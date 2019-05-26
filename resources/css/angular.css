@@ -27,7 +27,7 @@ div.list div.body div.list-header {
 div.list div.body div.list-header div.list-title a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: rgb(4, 107, 137);
+    color: #024559;
 }
 
 div.list div.body div.list-header div.list-title a:hover {
@@ -38,15 +38,31 @@ div.list div.body div.description {
     padding: 1rem 0.6rem;    
 }
 
-div.list div.body div.download-container {
+div.list div.body div.list-header-tools {
     float: right;
     position: relative;
     top: -24px;
 }
 
-div.list div.body div.download-container div.download-count {
-    font-size: 16px;
-    margin-left: 10px;
+div.list div.body div.list-header-tools a {
+    margin-right: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+div.list div.body div.list-header-tools a:hover {
+    text-decoration: underline;
+}
+
+div.list div.body div.list-header-tools a i {
+    font-size: 1rem;
+    margin-right: 0.3rem;
+}
+
+div.list div.body div.list-header-tools div.download-count {
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
     display: inline-block;
 }
 

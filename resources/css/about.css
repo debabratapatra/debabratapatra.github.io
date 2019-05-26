@@ -3,7 +3,7 @@ div.content {
 }
 
 div.content i {
-    color: rgb(4, 107, 137);
+    color: #024559;
 }
 
 div.name {
@@ -11,13 +11,13 @@ div.name {
 }
 
 div.designation {
-    color: rgb(4, 107, 137);
+    color: #024559;
     font-size: 1.1rem;
     margin-top: 0.5rem;
 }
 
 span.role {
-    color: rgb(4, 107, 137);
+    color: #024559;
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
@@ -45,7 +45,7 @@ div.experience-column {
 
 div.abt-title {
     font-size: 1.5rem;
-    color: rgb(4, 107, 137);
+    color: #024559;
     padding-bottom: .3rem;
     border-bottom: 0.1rem solid;
 }

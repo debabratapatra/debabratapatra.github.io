@@ -29,7 +29,7 @@ div.list div.body div.list-header {
 div.list div.body div.list-header div.list-title a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: rgb(4, 107, 137);
+    color: #024559;
 }
 
 div.list div.body div.list-header div.list-title a:hover {
