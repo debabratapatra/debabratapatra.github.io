@@ -875,7 +875,7 @@ var slider_module = function() {
                 current_image_index = 0;
             }
             showSlide(current_image_index);
-        }, 2500);
+        }, 3500);
     }
 
     function init() {

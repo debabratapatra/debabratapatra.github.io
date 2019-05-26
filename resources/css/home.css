@@ -9,7 +9,7 @@ div.slide-info {
     width: 34%;
     position: absolute;
     text-align: center;
-    top: 25%;
+    top: 15%;
 }
 
 div.slide {
@@ -18,17 +18,26 @@ div.slide {
 
 div.slide-title {
     color: #333;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-div.slide-details {padding-top: 2rem;}
+div.slide-details {
+    padding-top: 0.1rem;
+}
 
 div.slide-details a {
     text-decoration: none;
     color: #333;
     border: 1px solid;
     padding: 0.5rem 0.5rem;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    margin: 0.7rem 0.5rem 0 0;
+    display: inline-block;
+}
+
+div.slide-details a i {
+    margin-right: 0.25rem;
+    font-size: 0.9rem;
 }
 
 div.slide img {
@@ -193,6 +202,9 @@ div.canvas-card .card-header {
 }
 
 @media only screen and (min-width: 992px) {
+    div.slide-info {
+        top: 25%;
+    }
     div.card {
         margin-left: 3rem;
         margin-top: 0;
@@ -200,6 +212,10 @@ div.canvas-card .card-header {
 
     div.slide-title {
         font-size: 2rem;
+    }
+
+    div.slide-details {
+        padding-top: 3rem;
     }
     
     div.slide-details a {
@@ -213,7 +229,7 @@ div.canvas-card .card-header {
     }
     
     div.slide-details a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
 }
