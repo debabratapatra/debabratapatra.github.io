@@ -56,7 +56,7 @@ div.career-column {
 }
 
 span.skill {
-    border: 0.05rem solid rgb(4, 107, 137);
+    border: 0.05rem solid #cccccc;
     border-radius: 0.8rem;
     padding: 0.25rem 0.4rem;
     margin: 0.3rem 0.3rem;

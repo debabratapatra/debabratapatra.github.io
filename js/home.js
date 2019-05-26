@@ -867,8 +867,19 @@ var slider_module = function() {
         $carousels[current_image_index].classList.add('fas');
     }
 
+    function moveSlide() {
+        setInterval(function() {
+            current_image_index = current_image_index + 1;
+            if(current_image_index > slider_count - 1) {
+                current_image_index = 0;
+            }
+            showSlide(current_image_index);
+        }, 2500);
+    }
+
     function init() {
         showFirstSlide();
+        moveSlide();
     }
 
     return {
