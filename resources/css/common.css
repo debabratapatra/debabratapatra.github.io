@@ -6,14 +6,14 @@ div.header {
 
 div.navigator {
     position: absolute;
-    right: 10rem;
+    left: 0;
     top: 1.9rem;
 }
 
 div.navigator a.navigator-btn {
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 0.2rem;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: black;
 }
 
@@ -22,13 +22,33 @@ div.navigator a.navigator-btn:hover {
     border-radius: 3px;
 }
 
+div.profile-links {
+    position: absolute;
+    right: 0.2rem;
+}
+
+div.profile-links a {
+    margin-left: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+div.profile-links a.profile-photo img {
+    width: 2.5rem;
+    height: auto;
+    border-radius: 2rem;
+    position: relative;
+    top: 0.80rem;
+}
+
 body {
     margin: 0;
     color: #202124;
 }
 
 div.content {
-    padding: 2rem 1.5rem;
+    padding: 1rem 1rem;
 }
 
 .loader {
@@ -47,6 +67,10 @@ div.content {
 .hide {
     display: none;
 }
+
+.hide-sm {
+    display: none;
+}
   
 /* Safari */
 @-webkit-keyframes spin {
@@ -59,16 +83,30 @@ div.content {
     100% { transform: rotate(360deg); }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 768px) {
     div.navigator {
-        right: 0;
+        left: 10rem;
+    }
+
+    div.navigator a.navigator-btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 1rem;
+    }
+
+    div.profile-links {
+        right: 1rem;
+    }
+
+    div.profile-links a {
+        margin-left: 1rem;
+        font-size: 1.2rem;
     }
 
     div.content {
-        padding: 1rem 1rem;
+        padding: 2rem 1.5rem;
     }
 
     .hide-sm {
-        display: none;
+        display: initial;
     }
 }

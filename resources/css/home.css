@@ -1,7 +1,7 @@
 div#slider-wrapper {
     position: relative;
 }
-div.slider-container {    
+div.slider-container {
     position: relative;
 }
 
@@ -13,11 +13,11 @@ div.slide-info {
 }
 
 div.slide {
-    background-color: #0284A9;
+    background-color: #d9d9d9;
 }
 
 div.slide-title {
-    color: white;
+    color: #333;
     font-size: 1rem;
 }
 
@@ -25,7 +25,7 @@ div.slide-details {padding-top: 2rem;}
 
 div.slide-details a {
     text-decoration: none;
-    color: white;
+    color: #333;
     border: 1px solid;
     padding: 0.5rem 0.5rem;
     font-size: 0.75rem;
@@ -76,7 +76,6 @@ i.carousel {
 
 div.card-container {
     text-align: center;
-    margin-top: 3rem;
 }
 
 div.card {
