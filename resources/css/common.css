@@ -103,7 +103,7 @@ div.content {
     }
 
     .hide-sm {
-        display: initial;
+        display: inline;
     }
 }
 

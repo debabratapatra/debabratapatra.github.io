@@ -49,7 +49,8 @@ var home_module = function() {
         Utility.ajax(url, function (response) {
             var total = 0,
                 jData = JSON.parse(response);
-            jData.downloads.forEach(obj => {
+
+            jData.downloads.forEach(function(obj) {
                 total += obj.downloads;
             });
 
@@ -64,7 +65,7 @@ var home_module = function() {
         Utility.ajax(url, function (response) {
             var total = 0,
                 jData = JSON.parse(response);
-            jData.downloads.forEach(obj => {
+            jData.downloads.forEach(function(obj) {
                 total += obj.downloads;
             });
 
