@@ -237,7 +237,7 @@ var home_module = function() {
         components.balls = balls;
 
         cueBall = new CueBall(ballRadius, '#F7F7F7', board.x + board.width / 2,
-                        board.y + board.height / 2, undefined, components);
+            y+40, undefined, components);
         components.cueBall = cueBall;
         cueStick = new CueStick(board, components);
         components.cueStick = cueStick;
