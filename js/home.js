@@ -803,7 +803,7 @@ var home_module = function() {
             canvas.addEventListener('touchstart', function(e) {
                 updateMouseXY(e.touches[0]);
                 e.preventDefault();
-                me.onMouseDown();
+                onMouseDown();
             });
 
             canvas.addEventListener('mousemove', function(e) {
