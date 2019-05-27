@@ -767,17 +767,16 @@ var home_module = function() {
                 mouse.y = e.pageY - offsetTop;
             };
 
-            canvas.addEventListener('mousedown', function(e) {
-                updateMouseXY(e);
+            function onMouseDown() {
                 for(var i = 0; i < comps.length; i++) {
                     if(comps[i].hitTest(ctx, mouse)) {
                         comps[i].dragStart(mouse);
                         comps[i].drag = true;
                     }
                 }
-            });
-            canvas.addEventListener('mousemove', function(e) {
-                updateMouseXY(e);
+            }
+
+            function onMouseMove() {
                 canvas.style.cursor = 'default';
                 for(var i = 0; i < comps.length; i++) {
                     if(comps[i].hitTest(ctx, mouse)) {
@@ -787,14 +786,40 @@ var home_module = function() {
                         comps[i].dragging(mouse);
                     }
                 }
-            });
-            document.addEventListener('mouseup', function(e) {
+            }
+            function onMouseUp() {
                 for(var i = 0; i < comps.length; i++) {
                     if(comps[i].drag) {
                         comps[i].dragEnd();
                         comps[i].drag = false;
                     }
                 }
+            }
+
+            canvas.addEventListener('mousedown', function(e) {
+                updateMouseXY(e);
+                onMouseDown();
+            });
+            canvas.addEventListener('touchstart', function(e) {
+                updateMouseXY(e.touches[0]);
+                e.preventDefault();
+                me.onMouseDown();
+            });
+
+            canvas.addEventListener('mousemove', function(e) {
+                updateMouseXY(e);
+                onMouseMove();
+            });
+            canvas.addEventListener('touchmove', function(e) {
+                updateMouseXY(e.touches[0]);
+                e.preventDefault();
+                onMouseMove();
+            });
+            document.addEventListener('mouseup', function(e) {
+                onMouseUp();
+            });
+            canvas.addEventListener('touchend', function(e) {
+                onMouseUp();
             });
         }
         
