@@ -483,7 +483,7 @@ var home_module = function() {
             }
 
             this.width = 8;
-            this.height = board.height / 2;
+            this.height = board.height / 2.5;
             this.vy = 0;
             this.vx = 0;
             this.mass = 1.5;
