@@ -18,7 +18,7 @@ div.slide {
 
 div.slide-title {
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 div.slide-details {
@@ -29,9 +29,9 @@ div.slide-details a {
     text-decoration: none;
     color: #333;
     border: 1px solid;
-    padding: 0.5rem 0.5rem;
-    font-size: 0.9rem;
-    margin: 0.7rem 0.5rem 0 0;
+    padding: 0.25rem 0.25rem;
+    font-size: 0.8rem;
+    margin: 0.3rem 0.5rem 0 0;
     display: inline-block;
 }
 
@@ -80,7 +80,7 @@ div.slider-right-btn:hover {
 
 div.carousel-container {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
 }
 
 i.carousel {
@@ -99,7 +99,6 @@ div.card {
     position: relative;
     display: inline-table;
     margin-left: 0;
-    margin-top: 2rem;
 }
 
 div.card-header {
@@ -165,7 +164,6 @@ div.download-container div.download-count {
 
 div.canvas-card-container {
     text-align: center;
-    margin-top: 4rem;
 }
 
 div.canvas-card {
@@ -189,7 +187,24 @@ div.canvas-card .card-header {
     border: 1px solid #c7c3c3;
 }
 
+div.section {
+    background-color: #f8f8f8;
+    padding: 1rem 0 2rem 0;
+    margin-top: 1rem;
+}
+
+div.section-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 768px) {
+    div.slider-nav-btn {
+        font-size: 6rem;
+    }
+
     div.card {
         width: 28rem;
     }
@@ -202,6 +217,7 @@ div.canvas-card .card-header {
     
     div.slide-details a {
         font-size: 1rem;
+        padding: 0.55rem 0.5rem;
     }
 }
 

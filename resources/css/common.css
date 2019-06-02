@@ -52,7 +52,7 @@ body {
 }
 
 div.content {
-    padding: 1rem 1rem;
+    padding: 0;
 }
 
 .loader {
@@ -103,7 +103,7 @@ div.content {
     }
 
     div.content {
-        padding: 2rem 1.5rem;
+        padding: 0;
     }
 
     .hide-sm {
