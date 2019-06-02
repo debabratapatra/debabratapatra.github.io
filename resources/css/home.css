@@ -172,7 +172,7 @@ div.canvas-card {
 }
 
 div.canvas-card .card-header {
-    height: 30rem;
+    height: 24rem;
 }
 
 #space-canvas {
@@ -222,6 +222,10 @@ a.github-link {
     div.slide-details a {
         font-size: 1rem;
         padding: 0.55rem 0.5rem;
+    }
+
+    div.canvas-card .card-header {
+        height: 30rem;
     }
 }
 
