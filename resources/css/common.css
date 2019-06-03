@@ -1,6 +1,6 @@
 div.header {
     height: 4rem;
-    background-color: #f6f5f5;
+    background-color: #242424;
     position: relative;
 }
 
@@ -14,12 +14,11 @@ div.navigator a.navigator-btn {
     padding: 0.8rem 0.2rem;
     text-decoration: none;
     font-size: 1rem;
-    color: black;
+    color: white;
 }
 
 div.navigator a.navigator-btn:hover {
-    background-color: #e2e2e2;
-    border-radius: 3px;
+    color: gray;
 }
 
 div.profile-links {
@@ -29,13 +28,13 @@ div.profile-links {
 
 div.profile-links a {
     margin-left: 1rem;
-    color: #333;
+    color: white;
     text-decoration: none;
     font-size: 1rem;
 }
 
 div.profile-links a:hover {
-    color: #026f8f;
+    color: gray;
 }
 
 div.profile-links a.profile-photo img {
