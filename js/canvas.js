@@ -311,7 +311,7 @@ var home_module = function() {
         }
 
         function Striker(board, components) {
-            var wrapperX = board.x,
+            var wrapperX = board.x + 5,
                 wrapperY = board.y + board.height + 20,
                 wrapperWidth = 200,
                 wrapperHeight = 50,
@@ -324,6 +324,17 @@ var home_module = function() {
             this.width = originalWidth;
             this.draw = function(ctx) {
                 ctx.strokeRect(wrapperX, wrapperY, wrapperWidth, wrapperHeight);
+
+                var prevFont = ctx.font,
+                    prevFill = ctx.fillStyle;
+
+                ctx.font = "12px Arial";
+                ctx.fillStyle = 'black';
+                ctx.fillText('Drag to the Left', wrapperX + 50, this.y + 18);
+                ctx.font = "15px Calibri";
+                ctx.fillText('<---------------', wrapperX + 50, this.y - 10);
+                ctx.font = prevFont;
+                ctx.fillStyle = prevFill;
 
                 var prevFill = ctx.strokeStyle,
                     prevLine = ctx.lineWidth;
