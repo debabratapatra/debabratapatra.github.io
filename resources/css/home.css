@@ -6,7 +6,7 @@ div.slider-container {
 }
 
 div.slide-info {
-    width: 34%;
+    width: 45%;
     position: absolute;
     text-align: center;
     top: 8%;
@@ -47,6 +47,7 @@ div.slide-details a i {
 div.slide img {
     width: 100%;
     height: auto;
+    margin-top: 0.5rem;
 }
 
 div.carousel-container i {
