@@ -61,21 +61,21 @@
         <div class="highlight highlight-source-js"><pre>  <span class="pl-k">import</span> { <span class="pl-smi">NgtreegridModule</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>ngtreegrid<span class="pl-pds">'</span></span>;</pre></div>
         <p>Add it to your imports array.</p>
         <div class="highlight highlight-source-js"><pre>    @<span class="pl-en">NgModule</span>({
-                imports<span class="pl-k">:</span> [
+              imports<span class="pl-k">:</span> [
                 NgtreegridModule
-                ]
+              ]
             })</pre></div>
         <h3><a id="user-content-data" class="anchor" aria-hidden="true" href="#data"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Data</h3>
         <p>Format of the data should be like below.</p>
         <pre><code>  products: any[] = [
-                { product_type: 'Book', name: 'Angular', price: 90 },
-                { product_type: 'Book', name: 'Python', price: 70 },
-                { product_type: 'Book', name: 'PHP', price: 80 },
-                { product_type: 'Book', name: 'Java', price: 50 },
-                { product_type: 'Electronic', name: 'Mouse', price: 50 },
-                { product_type: 'Electronic', name: 'Earphone', price: 20 },
-                { product_type: 'Electronic', name: 'Speaker', price: 45 },
-                { product_type: 'Electronic', name: 'Hard Drive', price: 55 }
+              { product_type: 'Book', name: 'Angular', price: 90 },
+              { product_type: 'Book', name: 'Python', price: 70 },
+              { product_type: 'Book', name: 'PHP', price: 80 },
+              { product_type: 'Book', name: 'Java', price: 50 },
+              { product_type: 'Electronic', name: 'Mouse', price: 50 },
+              { product_type: 'Electronic', name: 'Earphone', price: 20 },
+              { product_type: 'Electronic', name: 'Speaker', price: 45 },
+              { product_type: 'Electronic', name: 'Hard Drive', price: 55 }
         ];
         </code></pre>
         <h3><a id="user-content-configs" class="anchor" aria-hidden="true" href="#configs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configs</h3>
@@ -105,14 +105,32 @@
         <tr>
         <td>group_by_width</td>
         <td>string/Array</td>
-        <td>n/a</td>
-        <td>Width of the GroupBy Column.</td>
+        <td>'auto'</td>
+        <td>Width of the GroupBy Column. It can be an array of GroupBy Column widths.</td>
+        </tr>
+        <tr>
+        <td>action_column_width</td>
+        <td>string</td>
+        <td>50px</td>
+        <td>Width of the Action Column.</td>
         </tr>
         <tr>
         <td>data_loading_text</td>
         <td>string</td>
         <td>'Loading...'</td>
         <td>Loading place holder. This will be displayed when data is empty.</td>
+        </tr>
+        <tr>
+        <td>filter</td>
+        <td>boolean</td>
+        <td>false</td>
+        <td>It enables filter toolbar. Filter is customizable at column level.</td>
+        </tr>
+        <tr>
+        <td>multi_select</td>
+        <td>boolean</td>
+        <td>false</td>
+        <td>It enables checkbox selection.</td>
         </tr>
         <tr>
         <td>row_class_function</td>
@@ -367,22 +385,22 @@
         </table>
         <h4><a id="user-content-basic-example" class="anchor" aria-hidden="true" href="#basic-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic Example</h4>
         <pre><code>  configs: any = {      
-                'group_by': 'product_type',
-                'group_by_header': 'Product Type',
-                'group_by_width': '100px',
-                'columns': [{
+              'group_by': 'product_type',
+              'group_by_header': 'Product Type',
+              'group_by_width': '100px',
+              'columns': [{
                 'header': 'Product Name',
                 'name': 'name',
                 'sortable': false
-                }, {
+              }, {
                 'header': 'Price',
                 'name': 'price',
                 'width': '200px',
                 'group_aggregator': (array) =&gt; {
-                    const prices = array.map((item) =&gt; item.price);
-                    return '$' + prices.reduce((acc, item) =&gt; acc + item);
+                  const prices = array.map((item) =&gt; item.price);
+                  return '$' + prices.reduce((acc, item) =&gt; acc + item);
                 }
-                }]
+              }]
         };
         </code></pre>
         <h3><a id="user-content-html" class="anchor" aria-hidden="true" href="#html"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTML</h3>
@@ -416,8 +434,23 @@
         </tr>
         <tr>
         <td>rowselect</td>
-        <td><strong>row:</strong> Selected Row</td>
+        <td><strong>event</strong> Consist of: <ul><li> <strong>data:</strong> Selected Row </li><li> <strong>event:</strong> Event Object</li></ul></td>
         <td>Event fires when a row is selected.</td>
+        </tr>
+        <tr>
+        <td>rowdeselect</td>
+        <td><strong>event</strong> Consist of: <ul><li> <strong>data:</strong> Selected Row </li><li> <strong>event:</strong> Event Object</li></ul></td>
+        <td>Event fires when a row is deselected.</td>
+        </tr>
+        <tr>
+        <td>rowselectall</td>
+        <td><strong>event:</strong> Event Object</td>
+        <td>Event fires when select-all checkbox is checked.</td>
+        </tr>
+        <tr>
+        <td>rowdeselectall</td>
+        <td><strong>event:</strong> Event Object</td>
+        <td>Event fires when select-all checkbox is unchecked.</td>
         </tr>
         <tr>
         <td>rowsave</td>
@@ -440,6 +473,6 @@
         <p>Yes. Please contact me at <a href="mailto:debabratapatra12@gmail.com"></a><a href="mailto:debabratapatra12@gmail.com">debabratapatra12@gmail.com</a>.</p>
         <h2><a id="user-content-license" class="anchor" aria-hidden="true" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>License</h2>
         <p>This project is licensed under the MIT license.</p>
-    </article>    
+        </article>
 </body>
 </html>
