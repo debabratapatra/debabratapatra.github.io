@@ -1,0 +1,19 @@
+div.blog-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #024559;
+    text-decoration: underline;
+}
+
+div.blog-list li {
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+div.blog-list li a {
+    text-decoration: none;
+}
+
+div.blog-list li a:hover {
+    text-decoration: underline;
+}
