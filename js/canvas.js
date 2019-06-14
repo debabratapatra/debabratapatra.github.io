@@ -781,7 +781,7 @@ var home_module = function() {
                 updateMouseXY(e.touches[0]);
                 e.preventDefault();
                 onMouseDown();
-            });
+            }, {passive: true});
 
             canvas.addEventListener('mousemove', function(e) {
                 updateMouseXY(e);
@@ -791,13 +791,13 @@ var home_module = function() {
                 updateMouseXY(e.touches[0]);
                 e.preventDefault();
                 onMouseMove();
-            });
+            }, {passive: true});
             document.addEventListener('mouseup', function(e) {
                 onMouseUp();
             });
             canvas.addEventListener('touchend', function(e) {
                 onMouseUp();
-            });
+            }, {passive: true});
         }
         
     }
