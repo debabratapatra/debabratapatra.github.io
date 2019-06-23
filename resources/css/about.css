@@ -63,8 +63,10 @@ span.skill {
     display: inline-block;
 }
 
-div.project {    
-    margin-top: 1.5rem;
+div.project {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dfdcdc;
 }
 
 div.project-title {
