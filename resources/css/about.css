@@ -1,5 +1,5 @@
 div.content {
-    padding: 2rem 16rem;
+    padding: 2rem 1rem;
 }
 
 div.content i {
@@ -26,21 +26,19 @@ div.location {
     margin-top: 0.5rem;    
 }
 
-div.short-details {
-    margin-top: 0.7rem;
-}
-
-div.short-details span {
+div.short-details > div {
     margin-right: 0.6rem;
+    margin-top: 0.7rem;
+    display: inline-block;
 }
 
 div.details {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 div.experience-column {
     display: inline-table;
-    width: 60%;
+    width: 100%;
 }
 
 div.abt-title {
@@ -52,7 +50,7 @@ div.abt-title {
 
 div.career-column {
     display: inline-table;
-    width: 39%;
+    width: 100%;
 }
 
 span.skill {
@@ -63,8 +61,16 @@ span.skill {
     display: inline-block;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 768px) {
     div.content {
-        padding: 2rem 2rem;
+        padding: 2rem 12rem;
+    }
+
+    div.experience-column {
+        width: 60%;
+    }
+
+    div.career-column {
+        width: 39%;
     }
 }

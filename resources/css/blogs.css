@@ -17,3 +17,13 @@ div.blog-list li a {
 div.blog-list li a:hover {
     text-decoration: underline;
 }
+
+div.content {
+    padding: 2rem 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    div.content {
+        padding: 1rem 0;
+    }
+}
