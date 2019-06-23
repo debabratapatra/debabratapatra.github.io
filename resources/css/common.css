@@ -73,6 +73,14 @@ div.content {
     height: 120px;
 }
 
+div.links a {
+    text-decoration: none;
+}
+
+div.links a:hover {
+    text-decoration: underline;
+}
+
 .hide {
     display: none;
 }
