@@ -18,6 +18,10 @@ div.navigator a.navigator-btn {
     font-weight: 500;
 }
 
+div.navigator a.navigator-btn.selected {
+    border-bottom: 3px solid #3498db;
+}
+
 div.navigator a.navigator-btn:hover {
     color: gray;
 }
@@ -91,7 +95,7 @@ div.content {
 @media only screen and (min-width: 768px) {
     div.navigator a.navigator-btn {
         font-size: 1.2rem;
-        padding: 0.8rem 1rem;
+        padding: 0.3rem 1rem;
     }
 
     div.profile-links {

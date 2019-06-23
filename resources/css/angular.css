@@ -4,8 +4,8 @@ div.list {
 }
 
 div.list div.left-container {
-    width: 25%;
-    display: table-cell;
+    width: 100%;
+    height: auto;    
 }
 
 div.list div.left-container img { 
@@ -14,8 +14,8 @@ div.list div.left-container img {
 }
 
 div.list div.body {
-    width: 60%;
-    display: table-cell;
+    width: 100%;
+    display: inline-block;
     vertical-align: top;
 }
 
@@ -66,9 +66,16 @@ div.list div.body div.list-header-tools div.download-count {
     display: inline-block;
 }
 
-@media only screen and (max-width: 800px) {
-    div.list div.left-container, div.list div.body {
-        width: 100%;
-        display: inline-block;
+@media only screen and (min-width: 768px) {
+    div.list div.body {
+        width: 60%;
+        display: table-cell;
+    }
+    div.list div.left-container {
+        width: 35%;
+        display: table-cell;
+    }
+    div.content {
+        padding: 2rem 12rem;
     }
 }

@@ -24,6 +24,6 @@ div.content {
 
 @media only screen and (min-width: 768px) {
     div.content {
-        padding: 1rem 0;
+        padding: 1rem 12rem;
     }
 }
