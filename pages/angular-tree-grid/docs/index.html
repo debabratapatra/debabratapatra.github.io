@@ -44,7 +44,8 @@
                 <span class="hide-xs">Debabrata Patra</span>                
             </a>
         </div>
-    </div><article class="markdown-body entry-content p-5" itemprop="text"><h1><a id="user-content-angular-tree-grid" class="anchor" aria-hidden="true" href="#angular-tree-grid"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Angular Tree Grid</h1>
+    </div>
+      <article class="markdown-body entry-content p-3 p-md-6" itemprop="text"><h1><a id="user-content-angular-tree-grid" class="anchor" aria-hidden="true" href="#angular-tree-grid"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Angular Tree Grid</h1>
       <p>Angular Tree Grid to show hierarchical data. Basically if data has Parent-Child relationship. It also supports sub-grid/nested-grid. If data needs to be grouped by fields then check out this <a href="https://github.com/debabratapatra/ngtreegrid">Package</a>.</p>
       <h2><a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Demo</h2>
       <p>Click <a href="https://angular-tree-grid.stackblitz.io/" rel="nofollow">here</a> for demo. This readme is the documentation. Visit my <a href="https://debabratapatra.github.io" rel="nofollow">Website</a> to know other packages.</p>
@@ -143,7 +144,7 @@
       <td>subgrid</td>
       <td>boolean</td>
       <td>false</td>
-      <td>It enables subgrid feature. parent_id_field is not mandatory for subgrid. Add, Edit, Delete, Sort features are disabled when it is true. See this <a href="https://angular-tree-grid.stackblitz.io/subgrid" rel="nofollow">Example</a> for more information</td>
+      <td>It enables subgrid feature. parent_id_field is not mandatory for subgrid. Add feature is disabled when it is true. See this <a href="https://angular-tree-grid.stackblitz.io/subgrid" rel="nofollow">Example</a> for more information</td>
       </tr>
       <tr>
       <td>subgrid_config</td>
@@ -596,6 +597,26 @@
       <td><ul><li> id: Row id(Primary Key) </li><li> suppress_event: Suppress expand event. It defaults to false.</li></ul></td>
       <td>Collapses a specific row. see this <a href="https://angular-tree-grid.stackblitz.io/specific_expand_collapse" rel="nofollow">Example</a>.</td>
       </tr>
+      <tr>
+      <td>disableRowSelection</td>
+      <td>id: Row id(Primary Key)</td>
+      <td>Disables Row Selection for the specific Row id.</td>
+      </tr>
+      <tr>
+      <td>enableRowSelection</td>
+      <td>id: Row id(Primary Key)</td>
+      <td>Enables Row Selection for the specific Row id.</td>
+      </tr>
+      <tr>
+      <td>disableRowExpand</td>
+      <td>id: Row id(Primary Key)</td>
+      <td>Disables Row Expand for the specific Row id.</td>
+      </tr>
+      <tr>
+      <td>enableRowExpand</td>
+      <td>id: Row id(Primary Key)</td>
+      <td>Enables Row Expand for the specific Row id.</td>
+      </tr>
       </tbody>
       </table>
       <h3><a id="user-content-can-i-hire-you-guys" class="anchor" aria-hidden="true" href="#can-i-hire-you-guys"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Can I hire you guys?</h3>
@@ -603,5 +624,8 @@
       <h2><a id="user-content-license" class="anchor" aria-hidden="true" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>License</h2>
       <p>This project is licensed under the MIT license.</p>
       </article>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140851244-1"></script>
 </body>
 </html>
