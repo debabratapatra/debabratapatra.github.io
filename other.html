@@ -152,11 +152,14 @@
 
         function calculateOld() {
             var income = document.getElementById('oldTaxInput').value;
+            document.getElementById('newTaxInput').value = income;
             var investment = document.getElementById('oldInvestmentInput').value;
+
             var tax = calculateOldTax(income-investment);
-
-
             document.getElementById('oldTax').innerHTML = tax;
+
+            var newtax = calculateNewTax(income);
+            document.getElementById('newTax').innerHTML = newtax;
         }
 
         function calculateNewTax(income) {
@@ -231,10 +234,13 @@
 
         function calculateNew() {
             var income = document.getElementById('newTaxInput').value;
+            document.getElementById('oldTaxInput').value = income;
+
             var tax = calculateNewTax(income);
-
-
             document.getElementById('newTax').innerHTML = tax;
+
+            var oldTax = calculateOldTax(income);
+            document.getElementById('oldTax').innerHTML = oldTax;
         }
     </script>
 </body>
