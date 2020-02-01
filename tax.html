@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/images/app/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/images/app/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/images/app/favicon/favicon-16x16.png">
+    <link rel="manifest" href="resources/images/app/favicon/site.webmanifest">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <title>Debabrata Patra: Tax Calculator</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+        }
+        table th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navigator">
+            <a href="index.html" class="navigator-btn">Home</a>
+            <a href="angular.html" class="navigator-btn hide-xs">Angular</a>
+            <a href="canvas.html" class="navigator-btn hide-xs">Canvas</a>
+            <a href="blogs.html" class="navigator-btn">Blogs</a>
+            <a href="about.html" class="navigator-btn">About Me</a>
+            <a href="tax.html" class="navigator-btn selected">Other</a>
+        </div>
+        <div class="profile-links">
+            <a href="https://github.com/debabratapatra/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/debabratapatra/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="about.html" class="profile-photo">
+                <img src="resources/images/app/debabrata-patra.jpg" alt="Debabrata"> 
+                <span class="hide-xs">Debabrata Patra</span>                
+            </a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Tax Calculator</h1>
+        <table>
+            <tr>
+                <th colspan="2">Old Tax Rate</th>
+                <th colspan="2">New Tax Rate</th>
+            </tr>
+            <tr>
+                <td>
+                    <label>Total Taxable Income:</label>
+                    </td><td>
+                    <input type="number" onkeyup="calculateOld()" id="oldTaxInput">
+                </td>
+                <td>
+                    <label>Total Income:</label>
+                </td><td>
+                    <input type="number" onkeyup="calculateNew()" id="newTaxInput">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Total Tax:</b></label>
+                </td><td>
+                    <label id="oldTax"></label>
+                </td>
+                <td>
+                    <label><b>Total Tax:</b></label>
+                </td><td>
+                    <label id="newTax"></label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer"></div>
+    <link rel="stylesheet" href="resources/css/library/font-awesome/css/all.min.css">
+    <script src="js/utility.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140851244-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140851244-1');
+
+        function calculateOldTax(income) {
+            var tax = 0;
+            income = income - 250000;
+            if(income < 0) {
+                return tax;
+            }
+
+            // 5%
+            income = income - 250000;
+
+            if(income < 0) {
+                return tax;
+            } else {
+                tax = 12500;
+            }
+
+            // 20%
+            var slab20 = 500000;
+            var income20 = income - slab20;
+
+            if(income20 < 0) {
+                tax += income * 0.20;
+                return tax;
+            } else {
+                tax += slab20 * 0.20;
+            }
+
+            //30%
+            tax += income20 * 0.30;
+
+            return tax;
+        }
+
+        function calculateOld() {
+            var income = document.getElementById('oldTaxInput').value;
+            var tax = calculateOldTax(income);
+
+
+            document.getElementById('oldTax').innerHTML = tax;
+        }
+
+        function calculateNewTax(income) {
+            var tax = 0;
+            income = income - 250000;
+            if(income < 0) {
+                return tax;
+            }
+
+            // 5%
+            income = income - 250000;
+
+            if(income < 0) {
+                return tax;
+            } else {
+                tax = 12500;
+            }
+
+            var slab = 250000;
+            var remaining = income;
+            var remainingCopy;
+
+            // 10%
+            remainingCopy = remaining;
+            remaining = remaining - slab;
+
+            if(remaining < 0) {
+                tax += remainingCopy * 0.10;
+                return tax;
+            } else {
+                tax += slab * 0.10;
+            }
+
+            // 15%
+            remainingCopy = remaining;
+            remaining = remaining - slab;
+
+            if(remaining < 0) {
+                tax += remainingCopy * 0.15;
+                return tax;
+            } else {
+                tax += slab * 0.15;
+            }
+
+            // 20%
+            remainingCopy = remaining;
+            remaining = remaining - slab;
+
+            if(remaining < 0) {
+                tax += remainingCopy * 0.20;
+                return tax;
+            } else {
+                tax += slab * 0.20;
+            }
+
+            // 25%
+            remainingCopy = remaining;
+            remaining = remaining - slab;
+
+            if(remaining < 0) {
+                tax += remainingCopy * 0.25;
+                return tax;
+            } else {
+                tax += slab * 0.25;
+            }
+
+            //30%
+            tax += remaining * 0.30;
+
+            return tax;
+        }
+
+        function calculateNew() {
+            var income = document.getElementById('newTaxInput').value;
+            var tax = calculateNewTax(income);
+
+
+            document.getElementById('newTax').innerHTML = tax;
+        }
+    </script>
+</body>
+</html>
