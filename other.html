@@ -77,7 +77,21 @@
             </tr>
             <tr>
                 <td>
-                    <label>Total Investment(Eligible):</label>
+                    <label>Standard Deduction:</label>
+                </td>
+                <td>
+                    <label>50,000</label>
+                </td>
+                <td>
+                    <label>Standard Deduction:</label>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Total Eligible investment(80C, 80D, HRA etc):</label>
                 </td>
                 <td>
                     <input type="number" onkeyup="calculateOld()" id="oldInvestmentInput">
@@ -119,7 +133,7 @@
 
         function calculateOldTax(income) {
             var tax = 0;
-            income = income - 250000;
+            income = income - 50000 - 250000;
             if (income < 0) {
                 return tax;
             }
