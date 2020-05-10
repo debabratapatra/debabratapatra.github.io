@@ -910,7 +910,7 @@ var slider_module = function() {
                 current_image_index = 0;
             }
             showSlide(current_image_index);
-        }, 3500);
+        }, 8000);
     }
 
     function init() {

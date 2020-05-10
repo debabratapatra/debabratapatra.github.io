@@ -34,8 +34,24 @@ var angular_module = function() {
             document.getElementById('angulartreegrid_download_count').innerHTML = Utility.formatNumber(total);
         });
     }
+
+    function fetchAngularFixHeaderGridCount() {
+        var currentDate = Utility.getCurrentDate(),
+            url = "https://npm-stat.com/downloads/range/2020-05-10:" + currentDate + "/angular-tree-grid";
+
+        Utility.ajax(url, function (response) {
+            var total = 0,
+                jData = JSON.parse(response);
+            jData.downloads.forEach(obj => {
+                total += obj.downloads;
+            });
+
+            document.getElementById('angularfixheadergrid_download_count').innerHTML = Utility.formatNumber(total);
+        });
+    }
     return {
         fetchNgTreeGridCount: fetchNgTreeGridCount,
-        fetchAngularTreeGridCount: fetchAngularTreeGridCount
+        fetchAngularTreeGridCount: fetchAngularTreeGridCount,
+        fetchAngularFixHeaderGridCount: fetchAngularFixHeaderGridCount,
     };
 }();
