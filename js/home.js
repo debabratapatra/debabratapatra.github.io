@@ -36,6 +36,7 @@ window.addEventListener("load",function(event) {
     slider_module.init();
     home_module.fetchNgTreeGridCount();
     home_module.fetchAngularTreeGridCount();
+    home_module.fetchAngularFixHeaderGridCount();
     home_module.launchSpaceExploration();
     home_module.launnchBilliard();
 });
@@ -70,6 +71,21 @@ var home_module = function() {
             });
 
             document.getElementById('angulartreegrid_download_count').innerHTML = Utility.formatNumber(total);
+        });
+    }
+
+    function fetchAngularFixHeaderGridCount() {
+        var currentDate = Utility.getCurrentDate(),
+            url = "https://npm-stat.com/downloads/range/2020-05-10:" + currentDate + "/angular-fix-header-grid";
+
+        Utility.ajax(url, function (response) {
+            var total = 0,
+                jData = JSON.parse(response);
+            jData.downloads.forEach(obj => {
+                total += obj.downloads;
+            });
+
+            document.getElementById('angularfixheadergrid_download_count').innerHTML = Utility.formatNumber(total);
         });
     }
 
@@ -838,6 +854,7 @@ var home_module = function() {
     return {
         fetchNgTreeGridCount: fetchNgTreeGridCount,
         fetchAngularTreeGridCount: fetchAngularTreeGridCount,
+        fetchAngularFixHeaderGridCount: fetchAngularFixHeaderGridCount,
         launchSpaceExploration: launchSpaceExploration,
         launnchBilliard: launnchBilliard
     };

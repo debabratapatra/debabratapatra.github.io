@@ -1,6 +1,7 @@
 window.addEventListener("load",function(event) {
     angular_module.fetchNgTreeGridCount();
     angular_module.fetchAngularTreeGridCount();
+    angular_module.fetchAngularFixHeaderGridCount();
 });
 
 var angular_module = function() {
@@ -37,7 +38,7 @@ var angular_module = function() {
 
     function fetchAngularFixHeaderGridCount() {
         var currentDate = Utility.getCurrentDate(),
-            url = "https://npm-stat.com/downloads/range/2020-05-10:" + currentDate + "/angular-tree-grid";
+            url = "https://npm-stat.com/downloads/range/2020-05-10:" + currentDate + "/angular-fix-header-grid";
 
         Utility.ajax(url, function (response) {
             var total = 0,
