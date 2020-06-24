@@ -100,7 +100,7 @@ div.card {
     position: relative;
     display: inline-table;
     margin-left: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 div.card-header {
@@ -198,7 +198,6 @@ div.section {
 div.section-header {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2rem;
     font-weight: bold;
 }
 
@@ -248,9 +247,6 @@ div.card-separator, div.canvas-card-separator {
 @media only screen and (min-width: 992px) {
     div.slide-info {
         top: 25%;
-    }
-    div.card {
-        margin-top: 0;
     }
     div.card-separator {
         width: 1rem;
