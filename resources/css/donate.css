@@ -1,0 +1,30 @@
+div.title-header {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+div.section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+div.section table {
+  display: inline-block;
+}
+
+div.section-header {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+div.content {
+  padding: 2rem 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  div.content {
+    padding: 1rem 12rem;
+  }
+}
