@@ -11,6 +11,11 @@ div.section {
 }
 
 div.section table {
+  display: block;
+  margin-bottom: 30px;
+}
+
+div.section table tbody {
   display: inline-block;
 }
 
