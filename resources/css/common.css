@@ -1,6 +1,6 @@
 div.header {
     height: 4rem;
-    background-color: #f8f8f8;
+    background-color: #e6e6e6;
     position: relative;
 }
 
@@ -19,7 +19,7 @@ div.navigator a.navigator-btn {
 }
 
 div.navigator a.navigator-btn.selected {
-    border-bottom: 3px solid #3498db;
+    border-bottom: 3px solid #9c9c9c;
 }
 
 div.navigator a.navigator-btn:hover {
