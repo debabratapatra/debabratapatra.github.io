@@ -1,6 +1,6 @@
 div.header {
     height: 4rem;
-    background-color: #e6e6e6;
+    background-color: #374571;
     position: relative;
 }
 
@@ -14,12 +14,12 @@ div.navigator a.navigator-btn {
     padding: 0.8rem 0.2rem;
     text-decoration: none;
     font-size: 1rem;
-    color: #333;
+    color: white;
     font-weight: 500;
 }
 
 div.navigator a.navigator-btn.selected {
-    border-bottom: 3px solid #9c9c9c;
+    border-bottom: 3px solid #6ca9e2;
 }
 
 div.navigator a.navigator-btn:hover {
@@ -33,7 +33,7 @@ div.profile-links {
 
 div.profile-links a {
     margin-left: 1rem;
-    color: #333;
+    color: white;
     text-decoration: none;
     font-size: 1rem;
 }
