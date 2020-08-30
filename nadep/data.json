@@ -1,0 +1,113 @@
+[
+    {    
+        "type": "text",
+        "text": "In this life we are running and running.",
+        "next": "auto",
+        "rtime": "6",
+        "ntime": "4"
+    },
+    {    
+        "type": "text",
+        "text": "And we are running in an autonomous mode.",
+        "next": "auto",
+        "rtime": "4",
+        "ntime": "6"
+    },
+    {    
+        "type": "text",
+        "text": "We have been doing the same thing for years. We have been thinking the same thing for years. Isn't it?",
+        "next": "auto",
+        "rtime": "10",
+        "ntime": "8"
+    },
+    {    
+        "type": "text",
+        "text": "Our mind and body are so adopted to the existing pattern that it is almost impossible to change a part of the pattern.",
+        "next": "auto",
+        "rtime": "8",
+        "ntime": "8"
+    },
+    {    
+        "type": "text",
+        "text": "This will make you less satisfied in your life which will lead to depression.",
+        "next": "auto",
+        "rtime": "8",
+        "ntime": "5"
+    },
+    {    
+        "type": "text",
+        "text": "We cannot change our lifestyle entirly. But with a bit of dedication we can change a small part of it.",
+        "next": "auto",
+        "rtime": "14",
+        "ntime": "4"
+    },
+    {    
+        "type": "text",
+        "text": "I have a set of simple natural tasks that will bring you close to the nature, gives you self satisfaction.",
+        "next": "auto",
+        "rtime": "14",
+        "ntime": "4"
+    },
+    {    
+        "type": "text",
+        "text": "By doing the task you will contribute for a better society and environment.",
+        "next": "auto",
+        "rtime": "7",
+        "ntime": "4"
+    },
+    {    
+        "type": "text",
+        "text": "Basically you will do a small task each day. Are you ready to start today itself?",
+        "next": "auto",
+        "rtime": "7",
+        "ntime": "4"
+    },
+    {    
+        "type": "text",
+        "text": "Great, today we will start with planting a tree. Very simple right? Not too much of work is required.",
+        "next": "auto",
+        "rtime": "8",
+        "ntime": "4"
+    },
+    {    
+        "type": "text",
+        "text": "Basically you can start with any plant and a pot if you don't have a garden.",
+        "next": "auto",
+        "rtime": "7",
+        "ntime": "4"
+    },
+    {    
+        "type": "text",
+        "text": "It is recommended to start with a vegetable plant or flower plant. Because when a flower blossoms, it gives you immense pleasure.",
+        "next": "auto",
+        "rtime": "10",
+        "ntime": "4"
+    },
+    {    
+        "type": "text",
+        "text": "I am going to show you a Youtube video to get some inspiration.",
+        "next": "auto",
+        "rtime": "6",
+        "ntime": "4"
+    },
+    {
+        "type": "video",
+        "link": "https://www.youtube.com/embed/3Krb_HVdgVM",
+        "next": "manual",
+        "ntime": "2"
+    },
+    {    
+        "type": "text",
+        "text": "That's all for today. Please do the task today. See you tomorrow. Bye!",
+        "next": "auto",
+        "rtime": "5",
+        "ntime": "2"
+    },
+    {    
+        "type": "stop",
+        "text": "",
+        "next": "",
+        "rtime": "",
+        "ntime": ""
+    }
+]
