@@ -36,7 +36,7 @@
     },
     {    
         "type": "text",
-        "text": "We cannot change our lifestyle entirly. But with a bit of dedication we can change a small part of it.",
+        "text": "We cannot change our lifestyle entirely. But with a bit of dedication we can change a small part of it.",
         "next": "auto",
         "rtime": "14",
         "ntime": "4"
@@ -50,7 +50,7 @@
     },
     {    
         "type": "text",
-        "text": "By doing the task you will contribute for a better society and environment.",
+        "text": "By doing the task you will contribute for a better society and environment as well.",
         "next": "auto",
         "rtime": "7",
         "ntime": "4"
@@ -78,7 +78,7 @@
     },
     {    
         "type": "text",
-        "text": "It is recommended to start with a vegetable plant or flower plant. Because when a flower blossoms, it gives you immense pleasure.",
+        "text": "It is recommended to start with a fruit plant or flower plant. Because It gives you immense pleasure when tree produces fruit or flower.",
         "next": "auto",
         "rtime": "10",
         "ntime": "4"
@@ -109,5 +109,208 @@
         "next": "",
         "rtime": "",
         "ntime": ""
+    },
+
+    
+
+    {    
+        "type": "text",
+        "text": "Great. I am glad that you finally did something different. It was no easy to change the pattern.",
+        "next": "auto",
+        "rtime": "6",
+        "ntime": "5"
+    },
+    {    
+        "type": "text",
+        "text": "You did a wonderful job!",
+        "next": "auto",
+        "rtime": "4",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "Today we are going to bring a wonderful living being to your home.",
+        "next": "auto",
+        "rtime": "4",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "Today we are going to bring a wonderful living being to your home.",
+        "next": "auto",
+        "rtime": "4",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "A bird",
+        "next": "auto",
+        "rtime": "3",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "Natural soothing sound of bird calms our mind and makes you productive.",
+        "next": "auto",
+        "rtime": "5",
+        "ntime": "4"
+    },
+    {    
+        "type": "text",
+        "text": "It doesn't cost you much to pet a bird.",
+        "next": "auto",
+        "rtime": "5",
+        "ntime": "4"
+    },
+    {    
+        "type": "text",
+        "text": "Taking care of birds makes you responsible in your life.",
+        "next": "auto",
+        "rtime": "5",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "Natural chirping sound make you feel like you are living with nature.",
+        "next": "auto",
+        "rtime": "5",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "I am going to suggest you a Youtube video to get some inspiration.",
+        "next": "auto",
+        "rtime": "6",
+        "ntime": "4"
+    },
+    {
+        "type": "video",
+        "link": "https://www.youtube.com/embed/q34H2VhwPjU",
+        "next": "manual",
+        "ntime": "2"
+    },
+    {    
+        "type": "text",
+        "text": "That's all for today. Please pet a bird today. Don't forget to water your plant. See you tomorrow. Bye!",
+        "next": "auto",
+        "rtime": "6",
+        "ntime": "2"
+    },
+    {    
+        "type": "stop",
+        "text": "",
+        "next": "",
+        "rtime": "",
+        "ntime": ""
+    },
+
+
+
+    {    
+        "type": "text",
+        "text": "Wow. Nice to see you again. How is your bird doing? How is your plant growing? Write in the comment section.",
+        "next": "auto",
+        "rtime": "6",
+        "ntime": "5"
+    },
+    {    
+        "type": "text",
+        "text": "You are doing a wonderful job!",
+        "next": "auto",
+        "rtime": "4",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "We got so many things from society when we are growing up right?",
+        "next": "auto",
+        "rtime": "4",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "But we forgot to give it back.",
+        "next": "auto",
+        "rtime": "4",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "We can do so many thing without spending much money. But we all can spend few hours.",
+        "next": "auto",
+        "rtime": "5",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "There can be a number of things we can do. Today I am going to suggest one.",
+        "next": "auto",
+        "rtime": "5",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "We can teach young children how to solve Math Problems or some Science stuff.",
+        "next": "auto",
+        "rtime": "4",
+        "ntime": "3"
+    },
+    {    
+        "type": "text",
+        "text": "Believe me you will love it. This will make you recall your childhood moments. And that was Awesome right?",
+        "next": "auto",
+        "rtime": "6",
+        "ntime": "6"
+    },
+    {    
+        "type": "text",
+        "text": "If you have young children in your relative then start with that. That is easy.",
+        "next": "auto",
+        "rtime": "5",
+        "ntime": "4"
+    },
+    {    
+        "type": "text",
+        "text": "I am going to suggest you a Youtube video to get some inspiration.",
+        "next": "auto",
+        "rtime": "6",
+        "ntime": "4"
+    },
+    {
+        "type": "video",
+        "link": "https://www.youtube.com/embed/KHCqxwWON9I",
+        "next": "manual",
+        "ntime": "2"
+    },
+    {    
+        "type": "text",
+        "text": "Here is another video that will love to learn.",
+        "next": "auto",
+        "rtime": "3",
+        "ntime": "3"
+    },
+    {
+        "type": "video",
+        "link": "https://www.youtube.com/embed/tt2DGYOi3hc",
+        "next": "manual",
+        "ntime": "2"
+    },
+    {    
+        "type": "text",
+        "text": "That's all for today. Don't forget to feed your pet and water your plant. See you tomorrow. Bye!",
+        "next": "auto",
+        "rtime": "6",
+        "ntime": "2"
+    },
+    {    
+        "type": "stop",
+        "text": "",
+        "next": "",
+        "rtime": "",
+        "ntime": ""
     }
+
+
+
+    
 ]
