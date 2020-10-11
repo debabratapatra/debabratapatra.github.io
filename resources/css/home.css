@@ -209,6 +209,10 @@ div.card-separator, div.canvas-card-separator {
     display: inline-block;
 }
 
+ul.lina-footer{
+    margin: 0;
+}
+
 @media only screen and (min-width: 768px) {
     div.slider-nav-btn {
         font-size: 6rem;
@@ -229,7 +233,7 @@ div.card-separator, div.canvas-card-separator {
     div.slide-title {
         font-size: 1.75rem;
     }
-    
+
     div.slide-details a {
         font-size: 1rem;
         padding: 0.55rem 0.5rem;
@@ -259,7 +263,7 @@ div.card-separator, div.canvas-card-separator {
     div.slide-details {
         padding-top: 3rem;
     }
-    
+
     div.slide-details a {
         font-size: 1rem;
     }
@@ -269,12 +273,12 @@ div.card-separator, div.canvas-card-separator {
     div.slide-title {
         font-size: 3rem;
     }
-    
+
     div.slide-details a {
         font-size: 1.2rem;
     }
     div.canvas-card-separator {
         width: 3rem;
     }
-    
+
 }
